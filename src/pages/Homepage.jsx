@@ -31,6 +31,21 @@ export default function Homepage() {
           </div>
         </div>
       </div>
+      <div className="container py-5">
+        <h2 className="text-center mb-5">Perch&eacute; viaggiare con noi?</h2>
+        <div className="row">
+          <div className="col-md-3">Gruppi piccoli</div>
+          <div className="col-md-3">Accompagnatori locali</div>
+          <div className="col-md-3">Date flessibili</div>
+          <div className="col-md-3">Esperienze autentiche</div>
+        </div>
+      </div>
+      <div className="text-center my-5">
+        <h2>Pronto a partire?</h2>
+        <Link to="/viaggi">
+          <button className="btn btn-dark mt-3">Scopri tutti i viaggi</button>
+        </Link>
+      </div>
     </>
   );
 }
