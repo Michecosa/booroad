@@ -66,11 +66,15 @@ export default function Homepage() {
             </p>
           </div>
         </div>
+        <hr className="mt-5 border border-2 opacity-50 shadow-sm" />
       </div>
+
       <div className="text-center my-5">
         <h2>Pronto a partire?</h2>
         <Link to="/viaggi">
-          <button className="btn btn-dark mt-3">Scopri tutti i viaggi</button>
+          <button className="btn btn-dark mt-3 mb-5">
+            Scopri tutti i viaggi
+          </button>
         </Link>
       </div>
     </>
