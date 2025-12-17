@@ -1,4 +1,5 @@
 import viaggi from "../data/viaggi.js";
+import { Link } from "react-router-dom";
 
 export default function ListaViaggi() {
   return (
@@ -20,9 +21,12 @@ export default function ListaViaggi() {
                     Data arrivo: <strong>{viaggio.dataFine}</strong>
                   </p>
 
-                  <a href="#" className="btn btn-outline-primary mt-auto">
+                  <Link
+                    to={`/viaggio/${viaggio.id}`}
+                    className="btn btn-outline-primary mt-auto"
+                  >
                     Dettagli viaggio
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
