@@ -33,11 +33,38 @@ export default function Homepage() {
       </div>
       <div className="container py-5">
         <h2 className="text-center mb-5">Perch&eacute; viaggiare con noi?</h2>
-        <div className="row">
-          <div className="col-md-3">Gruppi piccoli</div>
-          <div className="col-md-3">Accompagnatori locali</div>
-          <div className="col-md-3">Date flessibili</div>
-          <div className="col-md-3">Esperienze autentiche</div>
+        <div className="row text-center g-4">
+          <div className="col-md-3">
+            <i className="bi bi-people-fill fs-1 text-primary"></i>
+            <h5 className="mt-3">Gruppi piccoli</h5>
+            <p className="text-muted">
+              Viaggi in gruppi ridotti per vivere esperienze più autentiche e
+              creare legami veri.
+            </p>
+          </div>
+          <div className="col-md-3">
+            <i className="bi bi-compass-fill fs-1 text-primary"></i>
+            <h5 className="mt-3">Accompagnatori locali</h5>
+            <p className="text-muted">
+              Guide esperte che conoscono il territorio come casa loro.
+            </p>
+          </div>
+          <div className="col-md-3">
+            {" "}
+            <i className="bi bi-calendar-check-fill fs-1 text-primary"></i>
+            <h5 className="mt-3">Date flessibili</h5>
+            <p className="text-muted">
+              Partenze durante tutto l'anno per adattarsi ai tuoi ritmi.
+            </p>
+          </div>
+          <div className="col-md-3">
+            {" "}
+            <i className="bi bi-heart-fill fs-1 text-primary mb-3"></i>
+            <h5 className="mt-3">Esperienze autentiche</h5>
+            <p className="text-muted">
+              Non il solito viaggio: vivi la destinazione dall'interno.
+            </p>
+          </div>
         </div>
       </div>
       <div className="text-center my-5">
