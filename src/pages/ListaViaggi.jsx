@@ -7,7 +7,7 @@ export default function ListaViaggi() {
       <div className="container">
         <h1 className="mt-3 text-center fw-bold">Lista Viaggi</h1>
         <p className="text-center text-muted mb-4">
-          Destinazioni, date e dettagli delle tue prossime avventure
+          Destinazioni, date e dettagli
         </p>
         <div className="row">
           {viaggi.map((viaggio) => (
@@ -22,7 +22,7 @@ export default function ListaViaggi() {
                   </p>
 
                   <Link
-                    to={`/viaggi/${viaggio.id}`}
+                    to={`/${viaggio.id}`}
                     className="btn btn-outline-primary mt-auto"
                   >
                     Dettagli viaggio
