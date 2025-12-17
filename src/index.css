@@ -1,0 +1,7 @@
+.viaggio-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.viaggio-card:hover {
+  transform: translateY(-6px);
+}

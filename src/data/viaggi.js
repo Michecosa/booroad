@@ -4,56 +4,184 @@ const viaggi = [
     destinazione: "Parigi",
     dataInizio: "2025-03-10",
     dataFine: "2025-03-15",
-    viaggiatori: [1, 3], // Mario Rossi, Anna Verdi
+    viaggiatori: [
+      {
+        id: 1,
+        nome: "Mario",
+        cognome: "Rossi",
+        telefono: "3331234567",
+        email: "mario.rossi@email.it",
+        codiceFiscale: "RSSMRA80A01H501U",
+      },
+      {
+        id: 3,
+        nome: "Anna",
+        cognome: "Verdi",
+        telefono: "3353456789",
+        email: "anna.verdi@email.it",
+        codiceFiscale: "VRDNNA90C23G273K",
+      },
+    ],
   },
   {
     id: 2,
     destinazione: "Londra",
     dataInizio: "2025-04-01",
     dataFine: "2025-04-05",
-    viaggiatori: [2], // Luigi Bianchi
+    viaggiatori: [
+      {
+        id: 2,
+        nome: "Luigi",
+        cognome: "Bianchi",
+        telefono: "3342345678",
+        email: "luigi.bianchi@email.it",
+        codiceFiscale: "BNCLGU85B12F205Z",
+      },
+    ],
   },
   {
     id: 3,
     destinazione: "Barcellona",
     dataInizio: "2025-05-20",
     dataFine: "2025-05-27",
-    viaggiatori: [4, 6, 8], // Giulia Neri, Sara Galli, Elena Romano
+    viaggiatori: [
+      {
+        id: 4,
+        nome: "Giulia",
+        cognome: "Neri",
+        telefono: "3364567890",
+        email: "giulia.neri@email.it",
+        codiceFiscale: "NERGLI95D34L219P",
+      },
+      {
+        id: 6,
+        nome: "Sara",
+        cognome: "Galli",
+        telefono: "3386789012",
+        email: "sara.galli@email.it",
+        codiceFiscale: "GLLSRA92F56D612Q",
+      },
+      {
+        id: 8,
+        nome: "Elena",
+        cognome: "Romano",
+        telefono: "3208901234",
+        email: "elena.romano@email.it",
+        codiceFiscale: "RMNLNE91H78I726A",
+      },
+    ],
   },
   {
     id: 4,
     destinazione: "New York",
     dataInizio: "2025-06-10",
     dataFine: "2025-06-20",
-    viaggiatori: [5, 7], // Paolo Conti, Marco De Luca
+    viaggiatori: [
+      {
+        id: 5,
+        nome: "Paolo",
+        cognome: "Conti",
+        telefono: "3375678901",
+        email: "paolo.conti@email.it",
+        codiceFiscale: "CNTPLA88E45M082R",
+      },
+      {
+        id: 7,
+        nome: "Marco",
+        cognome: "De Luca",
+        telefono: "3397890123",
+        email: "marco.deluca@email.it",
+        codiceFiscale: "DLCMRC87G67E472S",
+      },
+    ],
   },
   {
     id: 5,
     destinazione: "Tokyo",
     dataInizio: "2025-09-01",
     dataFine: "2025-09-12",
-    viaggiatori: [9], // Davide Ferrari
+    viaggiatori: [
+      {
+        id: 9,
+        nome: "Davide",
+        cognome: "Ferrari",
+        telefono: "3219012345",
+        email: "davide.ferrari@email.it",
+        codiceFiscale: "FRRDVD84I89A944B",
+      },
+    ],
   },
   {
     id: 6,
     destinazione: "Roma",
     dataInizio: "2025-07-15",
     dataFine: "2025-07-18",
-    viaggiatori: [10, 11, 12], // Francesca, Andrea, Valentina
+    viaggiatori: [
+      {
+        id: 10,
+        nome: "Francesca",
+        cognome: "Esposito",
+        telefono: "3220123456",
+        email: "francesca.esposito@email.it",
+        codiceFiscale: "SPSFNC93L90F839C",
+      },
+      {
+        id: 11,
+        nome: "Andrea",
+        cognome: "Ricci",
+        telefono: "3231234567",
+        email: "andrea.ricci@email.it",
+        codiceFiscale: "RCCNDR86M01H224D",
+      },
+      {
+        id: 12,
+        nome: "Valentina",
+        cognome: "Marini",
+        telefono: "3242345678",
+        email: "valentina.marini@email.it",
+        codiceFiscale: "MRNVTN97N12C351E",
+      },
+    ],
   },
   {
     id: 7,
     destinazione: "Amsterdam",
     dataInizio: "2025-08-05",
     dataFine: "2025-08-10",
-    viaggiatori: [13, 14], // Stefano Costa, Chiara Rinaldi
+    viaggiatori: [
+      {
+        id: 13,
+        nome: "Stefano",
+        cognome: "Costa",
+        telefono: "3253456789",
+        email: "stefano.costa@email.it",
+        codiceFiscale: "CSTSFN82P23L736F",
+      },
+      {
+        id: 14,
+        nome: "Chiara",
+        cognome: "Rinaldi",
+        telefono: "3264567890",
+        email: "chiara.rinaldi@email.it",
+        codiceFiscale: "RNLCHR94Q34R788G",
+      },
+    ],
   },
   {
     id: 8,
     destinazione: "Berlino",
     dataInizio: "2025-10-02",
     dataFine: "2025-10-06",
-    viaggiatori: [15], // Alessandro Moretti
+    viaggiatori: [
+      {
+        id: 15,
+        nome: "Alessandro",
+        cognome: "Moretti",
+        telefono: "3275678901",
+        email: "alessandro.moretti@email.it",
+        codiceFiscale: "MRTLSS89R45S935H",
+      },
+    ],
   },
 ];
 
