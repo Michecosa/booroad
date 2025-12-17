@@ -21,10 +21,10 @@ export default function Homepage() {
           <div className="d-flex justify-content-center align-items-center h-100">
             <div className="text-white">
               <h1 className="mb-3">BooRoad</h1>
-              <h4 className="mb-3">
+              <h4 className="mb-5 fw-normal text-white">
                 Destinazioni, date e dettagli delle tue prossime avventure
               </h4>
-              <Link to={`/listaviaggi`}>
+              <Link to={`/viaggi`}>
                 <button className="btn btn-outline-light">Lista viaggi</button>
               </Link>
             </div>

@@ -22,7 +22,7 @@ export default function ListaViaggi() {
                   </p>
 
                   <Link
-                    to={`/viaggio/${viaggio.id}`}
+                    to={`/viaggi/${viaggio.id}`}
                     className="btn btn-outline-primary mt-auto"
                   >
                     Dettagli viaggio
