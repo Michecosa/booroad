@@ -17,8 +17,22 @@ export default function ListaViaggi() {
                   <h5 className="card-title">{viaggio.destinazione}</h5>
 
                   <p className="card-text text-muted small">
-                    Data partenza: <strong>{viaggio.dataInizio}</strong> <br />
-                    Data arrivo: <strong>{viaggio.dataFine}</strong>
+                    Data partenza:
+                    <strong>
+                      {new Date(viaggio.dataInizio).toLocaleDateString(
+                        "it-IT",
+                        { day: "2-digit", month: "short", year: "numeric" }
+                      )}
+                    </strong>
+                    <br />
+                    Data arrivo:
+                    <strong>
+                      {new Date(viaggio.dataFine).toLocaleDateString("it-IT", {
+                        day: "2-digit",
+                        month: "short",
+                        year: "numeric",
+                      })}
+                    </strong>
                   </p>
 
                   <Link
