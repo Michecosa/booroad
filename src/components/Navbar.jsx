@@ -4,23 +4,6 @@ import { useState } from "react";
 import viaggiUniti from "../data/viaggi";
 
 export default function Navbar() {
-  const [search, setSearch] = useState("");
-  const [loading, setLoading] = useState(true);
-
-  // variable
-  let viaggiatori = [];
-
-  viaggiUniti.forEach((viaggio) => {
-    viaggio.viaggiatori.forEach((viaggiatore) => {
-      viaggiatori.push(viaggiatore);
-    });
-  });
-
-  // filter users
-  const filteredUsers = viaggiatori.filter((user) =>
-    `${user.nome} ${user.cognome}`.toLowerCase().includes(search.toLowerCase())
-  );
-
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
@@ -46,17 +29,6 @@ export default function Navbar() {
               </NavLink>
             </li>
           </ul>
-          {loading && (
-            <form className="d-flex my-2 my-lg-0">
-              <input
-                className="form-control me-sm-2"
-                type="text"
-                placeholder="Cerca per nome o cognome"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-              />
-            </form>
-          )}
         </div>
       </div>
     </nav>
