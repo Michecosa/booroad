@@ -5,7 +5,6 @@ import { useSearch } from "../context/SearchContext";
 export default function DettaglioViaggio() {
   const { search } = useSearch();
 
-  // variable
   let viaggiatori = [];
 
   viaggi.forEach((viaggio) => {
@@ -14,7 +13,6 @@ export default function DettaglioViaggio() {
     });
   });
 
-  // filter users
   const filteredUsers = viaggiatori.filter((user) =>
     `${user.nome} ${user.cognome}`.toLowerCase().includes(search.toLowerCase())
   );
