@@ -169,9 +169,9 @@ const viaggi = [
   },
   {
     id: 8,
-    destinazione: "Berlino",
-    dataInizio: "2024-12-12",
-    dataFine: "2024-12-29",
+    destinazione: "Catania",
+    dataInizio: "2025-12-17",
+    dataFine: "2025-12-18",
     viaggiatori: [
       {
         id: 15,
