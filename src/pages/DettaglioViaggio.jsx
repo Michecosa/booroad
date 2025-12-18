@@ -7,6 +7,7 @@ export default function DettaglioViaggio() {
   const { id } = useParams();
 
   const filter = viaggi.filter((items) => items.id == id);
+  const [trip, setTrip] = useState(filter);
 
   function handleTrash(codiceFiscale) {
     const removeTraveler = trip[0].viaggiatori.filter(
@@ -15,7 +16,6 @@ export default function DettaglioViaggio() {
 
     setTrip([{ ...trip[0], viaggiatori: removeTraveler }]);
   }
-  const [trip, setTrip] = useState(filter);
 
   return (
     <>
@@ -29,22 +29,31 @@ export default function DettaglioViaggio() {
             <table className="table table-striped">
               <thead>
                 <tr>
-                  <th scope="col">Nome</th>
-                  <th scope="col" className="d-none d-md-table-cell">
+                  <th scope="col" className="text-center">
+                    Nome
+                  </th>
+                  <th
+                    scope="col"
+                    className="d-none d-md-table-cell text-center"
+                  >
                     Cognome
                   </th>
-                  <th scope="col">Azioni</th>
+                  <th scope="col" className="text-center">
+                    Azioni
+                  </th>
                 </tr>
               </thead>
               <tbody>
-                {trip[0].viaggiatori.map((viaggiatore, i) => (
+                {trip[0].viaggiatori.map((viaggiatore) => (
                   <tr key={viaggiatore.codiceFiscale}>
-                    <td>{viaggiatore.nome}</td>
-                    <td className="d-none d-md-table-cell">
+                    <td className="align-middle text-center">
+                      {viaggiatore.nome}
+                    </td>
+                    <td className="d-none align-middle d-md-table-cell text-center">
                       {viaggiatore.cognome}
                     </td>
-                    <td className="log">
-                      <Link to="/PersonDetails/:id">
+                    <td className="log text-center">
+                      <Link to={`/${id}/${viaggiatore.id}`}>
                         <button
                           type="button"
                           className="eye btn btn-outline-primary"
