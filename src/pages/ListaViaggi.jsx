@@ -2,6 +2,15 @@ import viaggi from "../data/viaggi.js";
 import { Link } from "react-router-dom";
 
 export default function ListaViaggi() {
+  function getStatoViaggio(dataInizio, dataFine) {
+    const oggi = new Date();
+    const inizio = new Date(dataInizio);
+    const fine = new Date(dataFine);
+
+    if (oggi < inizio) return "futuro";
+    if (oggi > fine) return "passato";
+    return "in-corso";
+  }
   return (
     <>
       <div className="container">
@@ -12,7 +21,13 @@ export default function ListaViaggi() {
         <div className="row">
           {viaggi.map((viaggio) => (
             <div key={viaggio.id} className="col-md-6 col-lg-3 mb-4">
-              <div className="card h-100 shadow-sm viaggio-card">
+              <div className="card h-100 shadow-sm viaggio-card position-relative">
+                <span
+                  className={`pallino-stato pallino-${getStatoViaggio(
+                    viaggio.dataInizio,
+                    viaggio.dataFine
+                  )}`}
+                ></span>
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title">{viaggio.destinazione}</h5>
 

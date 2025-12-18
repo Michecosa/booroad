@@ -2,8 +2,8 @@ const viaggi = [
   {
     id: 1,
     destinazione: "Parigi",
-    dataInizio: "2025-03-10",
-    dataFine: "2025-03-15",
+    dataInizio: "2026-03-10",
+    dataFine: "2026-03-15",
     viaggiatori: [
       {
         id: 1,
@@ -26,8 +26,8 @@ const viaggi = [
   {
     id: 2,
     destinazione: "Londra",
-    dataInizio: "2025-04-01",
-    dataFine: "2025-04-05",
+    dataInizio: "2026-04-01",
+    dataFine: "2026-04-05",
     viaggiatori: [
       {
         id: 2,
@@ -42,8 +42,8 @@ const viaggi = [
   {
     id: 3,
     destinazione: "Barcellona",
-    dataInizio: "2025-05-20",
-    dataFine: "2025-05-27",
+    dataInizio: "2025-12-11",
+    dataFine: "2025-12-27",
     viaggiatori: [
       {
         id: 4,
@@ -74,8 +74,8 @@ const viaggi = [
   {
     id: 4,
     destinazione: "New York",
-    dataInizio: "2025-06-10",
-    dataFine: "2025-06-20",
+    dataInizio: "2025-12-10",
+    dataFine: "2025-12-21",
     viaggiatori: [
       {
         id: 5,
@@ -98,8 +98,8 @@ const viaggi = [
   {
     id: 5,
     destinazione: "Tokyo",
-    dataInizio: "2025-09-01",
-    dataFine: "2025-09-12",
+    dataInizio: "2025-12-11",
+    dataFine: "2025-12-28",
     viaggiatori: [
       {
         id: 9,
@@ -114,8 +114,8 @@ const viaggi = [
   {
     id: 6,
     destinazione: "Roma",
-    dataInizio: "2025-07-15",
-    dataFine: "2025-07-18",
+    dataInizio: "2025-12-18",
+    dataFine: "2025-12-20",
     viaggiatori: [
       {
         id: 10,
@@ -146,8 +146,8 @@ const viaggi = [
   {
     id: 7,
     destinazione: "Amsterdam",
-    dataInizio: "2025-08-05",
-    dataFine: "2025-08-10",
+    dataInizio: "2025-12-15",
+    dataFine: "2025-12-21",
     viaggiatori: [
       {
         id: 13,
@@ -170,8 +170,8 @@ const viaggi = [
   {
     id: 8,
     destinazione: "Berlino",
-    dataInizio: "2025-10-02",
-    dataFine: "2025-10-06",
+    dataInizio: "2024-12-12",
+    dataFine: "2024-12-29",
     viaggiatori: [
       {
         id: 15,
