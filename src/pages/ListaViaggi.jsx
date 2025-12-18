@@ -4,9 +4,27 @@ import { useSearch } from "../context/SearchContext";
 
 export default function ListaViaggi() {
   const { search } = useSearch();
-  const viaggiFiltrati = viaggi.filter((viaggio) =>
-    viaggio.destinazione.toLowerCase().includes(search.toLowerCase())
-  );
+  const searchLower = search.toLowerCase();
+
+  const viaggiFiltrati = [];
+
+  viaggi.forEach((viaggio) => {
+    let viaggiatoriMatch = [];
+
+    viaggio.viaggiatori.forEach((viaggiatore) => {
+      if (
+        `${viaggiatore.nome} ${viaggiatore.cognome}`
+          .toLowerCase()
+          .includes(searchLower)
+      ) {
+        viaggiatoriMatch.push(viaggiatore);
+      }
+    });
+
+    if (viaggiatoriMatch.length > 0) {
+      viaggiFiltrati.push(viaggio);
+    }
+  });
 
   function getStatoViaggio(dataInizio, dataFine) {
     const oggi = new Date();
