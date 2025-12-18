@@ -5,8 +5,6 @@ import { useSearch } from "../context/SearchContext";
 export default function DettaglioViaggio() {
   const { search } = useSearch();
 
-  const [loading, setLoading] = useState(true);
-
   // variable
   let viaggiatori = [];
 
@@ -20,13 +18,6 @@ export default function DettaglioViaggio() {
   const filteredUsers = viaggiatori.filter((user) =>
     `${user.nome} ${user.cognome}`.toLowerCase().includes(search.toLowerCase())
   );
-
-  // simulo quello che facevi prima col loading
-  useEffect(() => {
-    setLoading(true);
-    const timer = setTimeout(() => setLoading(false), 300);
-    return () => clearTimeout(timer);
-  }, [search]);
 
   return (
     <>

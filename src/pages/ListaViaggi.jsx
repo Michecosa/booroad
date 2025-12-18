@@ -1,7 +1,13 @@
 import viaggi from "../data/viaggi.js";
 import { Link } from "react-router-dom";
+import { useSearch } from "../context/SearchContext";
 
 export default function ListaViaggi() {
+  const { search } = useSearch();
+  const viaggiFiltrati = viaggi.filter((viaggio) =>
+    viaggio.destinazione.toLowerCase().includes(search.toLowerCase())
+  );
+
   function getStatoViaggio(dataInizio, dataFine) {
     const oggi = new Date();
     const inizio = new Date(dataInizio);
@@ -19,7 +25,7 @@ export default function ListaViaggi() {
           Destinazioni, date e dettagli
         </p>
         <div className="row">
-          {viaggi.map((viaggio) => (
+          {viaggiFiltrati.map((viaggio) => (
             <div key={viaggio.id} className="col-md-6 col-lg-3 mb-4">
               <div className="card h-100 shadow-sm viaggio-card position-relative">
                 <span
