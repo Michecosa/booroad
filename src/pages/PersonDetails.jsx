@@ -16,15 +16,17 @@ export default function PersonDetail() {
   //console.log(filterUser);
 
   return (
-    <>
-      <div className="card">
+    <div className="container my-5 text-center d-flex justify-content-center">
+      <div className="card p-5">
         <div className="card-top">
           <img src={user}></img> {/*IMMAGE DELLA PERSONA*/}
         </div>
         <div className="card-bottom">
           <p className="name">
-            {traveler.nome} {traveler.cognome}
-          </p>{" "}
+            <h3 className="mt-4">
+              {traveler.nome} {traveler.cognome}
+            </h3>
+          </p>
           {/*TENDENZIALMENTE QUESTO DA FARE IN STRONG*/}
           <p>
             <strong>Codice fiscale:</strong>
@@ -38,6 +40,6 @@ export default function PersonDetail() {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
