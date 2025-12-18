@@ -1,7 +1,5 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.svg";
-import { useState } from "react";
-import viaggiUniti from "../data/viaggi";
 
 export default function Navbar() {
   return (
