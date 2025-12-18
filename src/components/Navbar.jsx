@@ -1,7 +1,9 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.svg";
+import { useSearch } from "../context/SearchContext";
 
 export default function Navbar() {
+  const { search, setSearch } = useSearch();
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
@@ -27,6 +29,15 @@ export default function Navbar() {
               </NavLink>
             </li>
           </ul>
+          <form className="d-flex my-2 my-lg-0">
+            <input
+              className="form-control me-sm-2"
+              type="text"
+              placeholder="Cerca per nome o cognome"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+          </form>
         </div>
       </div>
     </nav>
